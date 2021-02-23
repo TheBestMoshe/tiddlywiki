@@ -153,6 +153,8 @@ Error message and password prompt
 
 <li>$:/GitHub/Username</li>
 
+<li>$:/Import</li>
+
 <li>$:/isEncrypted</li>
 
 <li>$:/SiteTitle</li>
@@ -168,6 +170,10 @@ Error message and password prompt
 <li>$:/themes/tiddlywiki/snowwhite</li>
 
 <li>$:/themes/tiddlywiki/vanilla</li>
+
+<li>Open Media Vault Extras Installation</li>
+
+<li>Proxmox turn off laptop screen</li>
 
 </ul>
 </p>
@@ -10062,6 +10068,12 @@ Error message and password prompt
 <div created="20210223145014694" modified="20210223145016062" title="$:/GitHub/Username">
 <pre>thebestmoshe</pre>
 </div>
+<div status="complete" title="$:/Import">
+<pre>The following tiddlers were imported:
+
+# [[Open Media Vault Extras Installation]]
+# [[Proxmox turn off laptop screen]]</pre>
+</div>
 <div title="$:/isEncrypted">
 <pre>no</pre>
 </div>
@@ -10077,7 +10089,7 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210223145008034" list="GettingStarted" modified="20210223145124339" title="$:/StoryList">
+<div created="20210223145008034" list="$:/Import GettingStarted" modified="20210223145124339" title="$:/StoryList">
 <pre></pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="$:/themes/tiddlywiki/vanilla" description="Emphasises individual tiddlers" name="Snow White" plugin-priority="0" plugin-type="theme" title="$:/themes/tiddlywiki/snowwhite" type="application/json" version="5.1.23">
@@ -10188,6 +10200,26 @@ Error message and password prompt
         }
     }
 }</pre>
+</div>
+<div created="20210223035949050" modified="20210223041724772" tags="[[Open Media Vault]] [[Self Hosting]] Server" title="Open Media Vault Extras Installation">
+<pre>Follow the instructions on [this](https://wiki.omv-extras.org/) page.
+
+Basically, run  
+
+```
+wget -O - https://github.com/OpenMediaVault-Plugin-Developers/packages/raw/master/install | bash
+```
+
+Then navigate to `OMV-Extras` tab and enable `Extras Repo`. This will add more plugins to the list of plugins in the `Plugins` section</pre>
+</div>
+<div created="20210223031219537" modified="20210223031616701" tags="Proxmox Server [[Self Hosting]]" title="Proxmox turn off laptop screen" type="text/vnd.tiddlywiki">
+<pre>```
+setterm -blank 5
+```
+
+This will set the screen to shut after `n` minutes
+
+https://forum.proxmox.com/threads/ve-5-1-host-how-to-turn-off-laptop-screen.38115/post-188205</pre>
 </div>
 
 
